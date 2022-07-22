@@ -13,7 +13,7 @@ module.exports.list = (req, res, next) =>{
     Movie.find(options)
     .then(movies => {
         console.log(movies)
-        res.render('movies', {movies})
+        res.render('./movies', {movies})
     })
 
 }

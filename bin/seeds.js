@@ -1,6 +1,3 @@
-  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-  
-  // ... your code here
   const mongoose = require('mongoose')
 
   const Movie = require('../models/movie.model')
