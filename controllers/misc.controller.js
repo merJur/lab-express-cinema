@@ -1,3 +1,3 @@
-module.exports.index = (req, res, next) => {
+module.exports.home = (req, res, next) => {
   res.send('index')
 }

@@ -4,16 +4,11 @@ const Movie = require('../models/movie.model')
 module.exports.list = (req, res, next) =>{
     const {title} = req.query
 
-    const options = {}
-
-    if (title){
-        options.title = title
-    }
-
-    Movie.find(options)
+    Movie.find(title)
     .then(movies => {
-        console.log(movies)
+        console.log('entra movie.coontroller')
         res.render('movies', {movies})
+        
     })
 
 }
