@@ -1,7 +1,7 @@
   const mongoose = require('mongoose')
 
   const Movie = require('../models/movie.model')
-  const movies = require('../seeds/movie.seed.json')
+  const MOVIES = require('../seeds/movie.seed.json')
  console.log('hola modelo película')
 
 require('../db/index')
